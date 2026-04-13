@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>sight — Demo-Bereich</title>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Bebas+Neue&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -21,81 +21,62 @@ body {
 }
 
 .container {
-  max-width: 560px;
+  max-width: 480px;
   width: 100%;
+  text-align: center;
 }
 
-.logo { opacity: 0.4; margin-bottom: 48px; }
+.logo { margin-bottom: 56px; }
 
 h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(36px, 6vw, 52px);
+  font-size: clamp(42px, 7vw, 60px);
   line-height: 0.95;
   letter-spacing: 0.02em;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
-h1 span { color: #c0300a; }
+.accent { color: #c0300a; }
+
+.italic-line {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: clamp(36px, 6vw, 52px);
+  color: #c0300a;
+  display: block;
+  margin-top: 4px;
+}
 
 .subtitle {
-  font-size: 14px;
+  font-size: 15px;
   color: #6d6358;
   font-weight: 300;
-  margin-bottom: 40px;
+  line-height: 1.7;
+  margin: 28px auto 36px;
+  max-width: 380px;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.project-card {
-  background: #fff;
-  border: 1px solid rgba(14,13,11,0.07);
-  border-radius: 14px;
-  padding: 20px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s;
-  box-shadow: 0 2px 20px rgba(14,13,11,0.06);
-}
-.project-card:hover {
-  box-shadow: 0 12px 48px rgba(14,13,11,0.11);
-  transform: translateY(-2px);
-}
-
-.project-name {
-  font-size: 15px;
+.cta {
+  display: inline-block;
+  background: #0e0d0b;
+  color: #f7f4ee;
+  font-size: 14px;
   font-weight: 500;
+  padding: 15px 32px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.2s;
 }
-
-.project-tag {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: #c0300a;
-  font-weight: 300;
-  margin-top: 3px;
-}
-
-.arrow {
-  font-size: 18px;
-  color: rgba(14,13,11,0.15);
-  transition: color 0.2s;
-}
-.project-card:hover .arrow { color: #c0300a; }
+.cta:hover { background: #c0300a; }
 
 .footer {
-  margin-top: 48px;
+  margin-top: 56px;
   font-size: 11px;
   color: #6d6358;
   font-weight: 300;
 }
 .footer a { color: #c0300a; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -108,21 +89,16 @@ h1 span { color: #c0300a; }
     </svg>
   </div>
 
-  <h1>DEMO<span>.</span></h1>
-  <p class="subtitle">Entwürfe und Mockups für ausgewählte Projekte.</p>
+  <h1>GEFÄLLT IHNEN<span class="italic-line">der Entwurf?</span></h1>
 
-  <div class="projects">
-    <a href="/malerinnung/" class="project-card">
-      <div>
-        <div class="project-name">Maler- und Lackierer-Innung Bremen</div>
-        <div class="project-tag">Mockup · Redesign</div>
-      </div>
-      <span class="arrow">→</span>
-    </a>
-  </div>
+  <p class="subtitle">
+    Sie haben einen Designentwurf von mir erhalten. Bei Fragen, Änderungswünschen oder wenn Sie loslegen möchten — melden Sie sich gerne.
+  </p>
+
+  <a href="mailto:falke@sight-design.de" class="cta">Jetzt Kontakt aufnehmen</a>
 
   <div class="footer">
-    <a href="https://www.sight-design.de">sight-design.de</a> · Michelle Falke
+    <a href="https://www.sight-design.de">www.sight-design.de</a>
   </div>
 </div>
 
