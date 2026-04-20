@@ -1,0 +1,183 @@
+/* Variant A — Serious editorial */
+
+/* Hero */
+.va-hero { padding: 64px 0 80px; background: var(--paper); }
+.va-hero__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.va-hero__meta { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; }
+.va-hero__dot { width: 4px; height: 4px; background: var(--ink-900); border-radius: 50%; }
+
+.va-hero__h {
+  font-size: clamp(56px, 7vw, 108px);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  margin: 0;
+}
+.va-hero__accent {
+  background: var(--yellow-500);
+  padding: 0 .15em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.va-hero__serif {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--red-600);
+}
+.va-hero__lede {
+  font-size: 18px; line-height: 1.55;
+  color: var(--ink-700);
+  max-width: 52ch;
+  margin: 36px 0 32px;
+}
+.va-hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.va-hero__proof {
+  margin-top: 48px;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
+.va-hero__proof > div { display: flex; flex-direction: column; gap: 4px; }
+.va-hero__proof b {
+  font-family: var(--f-display);
+  font-size: 34px; font-weight: 600; letter-spacing: -0.02em;
+}
+.va-hero__proof span { font-size: 12.5px; color: var(--muted); }
+
+.va-hero__right { position: relative; aspect-ratio: 4/5; }
+.va-hero__img {
+  position: absolute; inset: 0; border-radius: var(--r-lg);
+  font-size: 12px;
+}
+.va-hero__badge {
+  position: absolute; left: -30px; bottom: 40px;
+  background: var(--yellow-500);
+  border-radius: 50%; width: 140px; height: 140px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 10px;
+  transform: rotate(-8deg);
+  box-shadow: var(--shadow-2);
+}
+.va-hero__badge .mono { font-size: 9px; color: var(--ink-700); }
+.va-hero__badge-b {
+  font-family: var(--f-display);
+  font-weight: 600; font-size: 16px; line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--ink-900);
+  margin-top: 4px;
+}
+
+/* Bands */
+.va-bands {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.va-band {
+  padding: 36px 32px 32px;
+  border-radius: var(--r-lg);
+  min-height: 280px;
+  display: flex; flex-direction: column; gap: 14px;
+  position: relative; overflow: hidden;
+}
+.va-band h2 { font-size: 30px; letter-spacing: -0.02em; line-height: 1.05; }
+.va-band p { margin: 0; color: inherit; opacity: .88; font-size: 15px; }
+.va-band__cta {
+  margin-top: auto;
+  font-family: var(--f-display); font-weight: 600; font-size: 15px;
+}
+.va-band--customer { background: var(--white); border: 1px solid var(--rule); }
+.va-band--customer .va-band__cta { color: var(--blue-700); }
+.va-band--member { background: var(--blue-900); color: var(--paper); }
+.va-band--member .va-band__cta--light { color: var(--yellow-400); }
+.va-band--azubi { background: var(--yellow-500); color: var(--ink-900); }
+.va-band--azubi::after {
+  content: ""; position: absolute; right: -20px; bottom: -20px;
+  width: 90px; height: 90px; border-radius: 50%;
+  background: var(--red-600); opacity: .18;
+}
+
+/* Finder row */
+.va-finder-row { padding: 20px 40px 60px; }
+
+/* News */
+.va-news { padding: 80px 40px 40px; }
+.va-news__head {
+  display: flex; justify-content: space-between; align-items: end;
+  margin-bottom: 40px;
+}
+.va-section-h { font-size: 56px; letter-spacing: -0.03em; margin-top: 12px; }
+.va-news__more { font-family: var(--f-display); font-weight: 600; color: var(--blue-700); }
+.va-news__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Azubi band */
+.va-azubi-band {
+  background: var(--blue-900); color: var(--paper);
+  margin-top: 100px; padding: 100px 0;
+  position: relative; overflow: hidden;
+}
+.va-azubi-band::before {
+  content: ""; position: absolute; left: -120px; top: -120px;
+  width: 340px; height: 340px; border-radius: 50%;
+  background: var(--red-600); opacity: .3;
+}
+.va-azubi-band__grid {
+  display: grid; grid-template-columns: 1fr 1.05fr;
+  gap: 80px; align-items: center; position: relative;
+}
+.va-azubi-band__copy p { max-width: 46ch; color: rgba(255,255,255,.75); font-size: 16.5px; }
+.va-azubi-band__h {
+  font-size: clamp(64px, 8vw, 110px);
+  line-height: 0.95;
+  margin: 20px 0 24px;
+}
+.va-azubi-band__hl {
+  background: var(--yellow-500);
+  color: var(--ink-900);
+  padding: 0 .15em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.va-azubi-band__ctas { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+.va-azubi-band__grid2 {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.va-azubi-band__tile {
+  aspect-ratio: 1;
+  border-radius: var(--r-md);
+}
+.va-azubi-band__num {
+  background: transparent;
+  border: 1px dashed rgba(255,255,255,.25);
+  padding: 24px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.va-azubi-band__num-v {
+  font-family: var(--f-display);
+  font-weight: 600; font-size: 44px; letter-spacing: -0.02em;
+  color: var(--yellow-500);
+}
+.va-azubi-band__num-l { margin-top: 6px; color: rgba(255,255,255,.8); font-size: 14px; }
+
+/* Azubi band sitzt direkt auf dem Footer — kein Paper-Gap dazwischen */
+.va-azubi-band + .footer { margin-top: 0; }
+
+/* Echte Bilder in Hero- und Azubi-Kacheln */
+.va-hero__img { overflow: hidden; }
+.va-hero__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.va-azubi-band__tile { overflow: hidden; }
+.va-azubi-band__tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
