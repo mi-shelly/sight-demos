@@ -110,6 +110,57 @@
 /* Finder row */
 .va-finder-row { padding: 20px 40px 60px; }
 
+/* Vorteile für Mitglieder */
+.va-benefits { padding: 80px 40px 40px; }
+.va-benefits__head {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: end;
+  margin-bottom: 40px;
+}
+.va-benefits__lede {
+  font-size: 17px; line-height: 1.55;
+  color: var(--ink-700);
+  max-width: 48ch;
+  margin: 0;
+}
+.va-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.va-benefit {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-md);
+  padding: 28px 26px;
+  display: flex; flex-direction: column; gap: 10px;
+  min-height: 220px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.va-benefit:hover { transform: translateY(-3px); box-shadow: var(--shadow-1); }
+.va-benefit__n { color: var(--blue-700); margin-bottom: 6px; }
+.va-benefit h3 {
+  font-family: var(--f-display);
+  font-weight: 600; font-size: 22px; letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--ink-900);
+}
+.va-benefit p {
+  color: var(--ink-700);
+  font-size: 14.5px; line-height: 1.5;
+  margin: 0;
+}
+.va-benefit--highlight {
+  background: var(--blue-900); color: var(--paper); border-color: var(--blue-900);
+}
+.va-benefit--highlight h3 { color: var(--paper); }
+.va-benefit--highlight p { color: rgba(255,255,255,.75); }
+.va-benefit--highlight .va-benefit__n { color: var(--yellow-400); }
+.va-benefits__cta {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-top: 36px;
+}
+
 /* News */
 .va-news { padding: 80px 40px 40px; }
 .va-news__head {

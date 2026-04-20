@@ -76,6 +76,59 @@ function VariantA() {
         <MemberFinder />
       </section>
 
+      {/* ---------- VORTEILE FÜR MITGLIEDER ---------- */}
+      <section className="va-benefits wrap">
+        <div className="va-benefits__head">
+          <div>
+            <span className="eyebrow">Für Mitglieder</span>
+            <h2 className="va-section-h">Was Ihre Mitgliedschaft<br/>wert ist.</h2>
+          </div>
+          <p className="va-benefits__lede">
+            112 Meisterbetriebe teilen sich Wissen, Werkzeuge und eine Stimme.
+            Das sind die Leistungen, die Ihnen als Innungs­mitglied im Alltag
+            wirklich Zeit und Geld sparen.
+          </p>
+        </div>
+
+        <div className="va-benefits__grid">
+          <div className="va-benefit">
+            <span className="va-benefit__n mono">01</span>
+            <h3>Rechts­beratung</h3>
+            <p>Kostenfrei für Mitglieder — Vertragsrecht, VOB, Inkasso, Arbeitsrecht. Ein Anruf reicht.</p>
+          </div>
+          <div className="va-benefit">
+            <span className="va-benefit__n mono">02</span>
+            <h3>Tarif­auskunft &amp; Gehalts­rechner</h3>
+            <p>Aktuelle Tarife, Zulagen, Sonderzahlungen — immer aktuell, immer verlässlich berechnet.</p>
+          </div>
+          <div className="va-benefit">
+            <span className="va-benefit__n mono">03</span>
+            <h3>Weiter­bildung &amp; Meisterkurse</h3>
+            <p>Fach­seminare, Sicherheits­schulungen, Meister­vorbereitung — zu Mitglieds­konditionen.</p>
+          </div>
+          <div className="va-benefit">
+            <span className="va-benefit__n mono">04</span>
+            <h3>Digitale Lehrlings­rolle</h3>
+            <p>Anmeldung, Prüfung, überbetriebliche Kurse — alles online. Keine Ordner, keine Wartezeit.</p>
+          </div>
+          <div className="va-benefit">
+            <span className="va-benefit__n mono">05</span>
+            <h3>Muster­verträge &amp; Vorlagen</h3>
+            <p>Werkverträge, AGB, Übergabe­protokolle — rechts­sicher vorformuliert, sofort einsetzbar.</p>
+          </div>
+          <div className="va-benefit va-benefit--highlight">
+            <span className="va-benefit__n mono">06</span>
+            <h3>Gütezeichen &amp; Schlichtungsstelle</h3>
+            <p>Sichtbares Qualitäts­merkmal gegenüber Kunden — plus kostenfreie Schlichtung im Konfliktfall.</p>
+          </div>
+        </div>
+
+        <div className="va-benefits__cta">
+          <a href="#" className="btn btn-primary">Zum Mitglieder-Login →</a>
+          <a href="#" className="btn btn-ghost">Mitgliedschaft anfragen</a>
+        </div>
+      </section>
+
       <section className="va-news wrap">
         <div className="va-news__head">
           <div>
